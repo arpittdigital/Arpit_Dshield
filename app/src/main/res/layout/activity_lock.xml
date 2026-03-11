@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lockRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/companyLogo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Heading -->
+            <TextView
+                android:id="@+id/tvMainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEVICE ACCESS TEMPORARILY RESTRICTED"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="#1E3A8A"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="आपका डिवाइस अस्थायी रूप से प्रतिबंधित कर दिया गया है"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+
+            <!-- Warning Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Outstanding EMI Payment Detected"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#D32F2F"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="आपकी EMI का भुगतान लंबित है"
+                android:textSize="15sp"
+                android:textColor="#D32F2F"
+                android:gravity="center"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Instruction -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kindly complete your pending installment to restore full device access."
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="कृपया अपने डिवाइस को पुनः सक्रिय करने के लिए बकाया EMI का भुगतान करें।"
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- ✅ UPDATED: Retailer Section with Card Style -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Section Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📞 Retailer Details"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#1E3A8A"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center"/>
+
+                <!-- Retailer Name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Retailer:"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="#555555"/>
+
+                    <TextView
+                        android:id="@+id/tvRetailerName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Loading..."
+                        android:textSize="13sp"
+                        android:textColor="#1E3A8A"
+                        android:textStyle="bold"
+                        android:gravity="end"/>
+
+                </LinearLayout>
+
+                <!-- Shop Name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Shop Name:"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="#555555"/>
+
+                    <TextView
+                        android:id="@+id/tvRetailerShop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Loading..."
+                        android:textSize="13sp"
+                        android:textColor="#1E3A8A"
+                        android:textStyle="bold"
+                        android:gravity="end"/>
+
+                </LinearLayout>
+
+                <!-- Contact Number -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Contact:"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:textColor="#555555"/>
+
+                    <TextView
+                        android:id="@+id/tvRetailerMobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Loading..."
+                        android:textSize="13sp"
+                        android:textColor="#D32F2F"
+                        android:textStyle="bold"
+                        android:gravity="end"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Helper Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please contact the retailer to resolve the payment issue and unlock your device."
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="डिवाइस अनलॉक करने के लिए कृपया रिटेलर से संपर्क करें।"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
